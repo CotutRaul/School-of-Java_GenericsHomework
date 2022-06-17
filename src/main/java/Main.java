@@ -1,13 +1,10 @@
-import java.math.BigInteger;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class Main {
 
-    static <E> void changePozition(E[] array, int a, int b)
+    static <E> void changePosition(E[] array, int a, int b)
     {
         E aux = array[a];
         array[a]=array[b];
@@ -45,9 +42,9 @@ public class Main {
         Integer[] ints = {1,2,4,6,10,9,85,77,11};
         Double[] doubles = {1.2,5.0,12.5,17.0,16.0,17.5,13.0,2.0};
         Long[] longs = {1L,5L,12L,17L,16L,17L,13L,2L, 131L, 117L, 125L};
-        changePozition(strings,2,5);
-        changePozition(ints,1,4);
-        changePozition(doubles,1,4);
+        changePosition(strings,2,5);
+        changePosition(ints,1,4);
+        changePosition(doubles,1,4);
         System.out.println("After change");
         System.out.println("Strings:");
         for (String s : strings) {
